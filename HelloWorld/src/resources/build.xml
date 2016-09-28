@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HelloWorld" default="info">
+	<!-- <project name="HelloWorld" default="error"> -->
+	<target name="info">
+		<echo>Hey, from Ant!!</echo>
+	</target>
+	<target name="error">
+		<echo>Error, from Ant!!</echo>
+	</target>
+</project>
