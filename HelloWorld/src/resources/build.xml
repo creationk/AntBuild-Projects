@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="HelloWorld" default="info">
 	<!-- <project name="HelloWorld" default="error"> -->
-	<target name="info">
+	<target name="info" depends="helloworld, smile">
 		<echo>Hey, from Ant!!</echo>
+		<echo>${ant.version}</echo>
+		<echo>${basedir}</echo>
 	</target>
-	<target name="error">
-		<echo>Error, from Ant!!</echo>
+	<target name="helloworld">
+		<echo>Hello World!!</echo>
+	</target>
+	<target name="smile">
+		<echo>:-)</echo>
 	</target>
 </project>
